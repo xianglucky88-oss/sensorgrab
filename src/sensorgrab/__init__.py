@@ -1,1 +1,1 @@
-"""sensorgrab baseline (single-responsibility pipeline)."""
+"""sensorgrab package (single-responsibility pipeline)."""
