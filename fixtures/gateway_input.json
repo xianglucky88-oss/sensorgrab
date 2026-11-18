@@ -1,0 +1,71 @@
+[
+  {"kind": "calibration", "device": "dev-a", "channel": "temp", "version": "cal-v1", "scale": 0.01, "offset": -40.0, "unit": "celsius", "effective_from": "2026-11-10T00:00:00Z", "tick": 0},
+  {"kind": "calibration", "device": "dev-b", "channel": "hum", "version": "cal-v1", "scale": 0.1, "offset": 0.0, "unit": "percent", "effective_from": "2026-11-10T00:00:00Z", "tick": 0},
+  {"kind": "calibration", "device": "dev-c", "channel": "press", "version": "cal-v1", "scale": 1.0, "offset": 0.0, "unit": "kpa", "effective_from": "2026-11-10T00:00:00Z", "tick": 0},
+
+  {"kind": "modbus", "device": "dev-a", "channel": "temp", "epoch": 1, "seq": 1, "sample_ts": "2026-11-10T08:00:00Z", "recv_ts": "2026-11-10T08:00:01Z", "raw": 2315, "tick": 1, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+  {"kind": "mqtt", "device": "dev-b", "channel": "hum", "epoch": 1, "seq": 1, "sample_ts": "2026-11-10T08:00:05Z", "recv_ts": "2026-11-10T08:00:06Z", "raw": 482, "tick": 1, "origin": "realtime", "msg": {"qos": 1, "payload_ok": true}},
+  {"kind": "modbus", "device": "dev-c", "channel": "press", "epoch": 1, "seq": 1, "sample_ts": "2026-11-10T08:00:07Z", "recv_ts": "2026-11-10T08:00:08Z", "raw": 101, "tick": 1, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+
+  {"kind": "modbus", "device": "dev-c", "channel": "press", "epoch": 1, "seq": 2, "attempt": 1, "timeout": true, "recv_ts": "2026-11-10T08:01:00Z", "tick": 2, "origin": "realtime", "frame": {"function": 3}},
+  {"kind": "modbus", "device": "dev-c", "channel": "press", "epoch": 1, "seq": 2, "attempt": 2, "timeout": true, "recv_ts": "2026-11-10T08:01:05Z", "tick": 2, "origin": "realtime", "frame": {"function": 3}},
+  {"kind": "modbus", "device": "dev-a", "channel": "temp", "epoch": 1, "seq": 2, "sample_ts": "2026-11-10T08:01:10Z", "recv_ts": "2026-11-10T08:01:11Z", "raw": 2300, "tick": 2, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+
+  {"kind": "modbus", "device": "dev-c", "channel": "press", "epoch": 1, "seq": 2, "attempt": 3, "timeout": true, "recv_ts": "2026-11-10T08:02:00Z", "tick": 3, "origin": "realtime", "frame": {"function": 3}},
+  {"kind": "modbus", "device": "dev-a", "channel": "temp", "epoch": 1, "seq": 3, "sample_ts": "2026-11-10T08:02:10Z", "recv_ts": "2026-11-10T08:02:11Z", "raw": 2310, "tick": 3, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+  {"kind": "mqtt", "device": "dev-b", "channel": "hum", "epoch": 1, "seq": 2, "sample_ts": "2026-11-10T08:02:20Z", "recv_ts": "2026-11-10T08:02:21Z", "raw": 480, "tick": 3, "origin": "realtime", "msg": {"qos": 1, "payload_ok": true}},
+  {"kind": "mqtt", "event": "ack", "device": "dev-b", "channel": "hum", "epoch": 1, "ack_seq": 1, "recv_ts": "2026-11-10T08:02:30Z", "tick": 3, "msg": {"type": "puback"}},
+
+  {"kind": "modbus", "device": "dev-c", "channel": "press", "epoch": 1, "seq": 2, "sample_ts": "2026-11-10T08:03:00Z", "recv_ts": "2026-11-10T08:03:01Z", "raw": 102, "tick": 4, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+  {"kind": "uplink", "state": "down", "tick": 4, "recv_ts": "2026-11-10T08:03:10Z"},
+  {"kind": "modbus", "device": "dev-a", "channel": "temp", "epoch": 1, "seq": 4, "sample_ts": "2026-11-10T08:03:20Z", "recv_ts": "2026-11-10T08:03:21Z", "raw": 2312, "tick": 4, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+  {"kind": "mqtt", "device": "dev-b", "channel": "hum", "epoch": 1, "seq": 3, "sample_ts": "2026-11-10T08:03:30Z", "recv_ts": "2026-11-10T08:03:31Z", "raw": 485, "tick": 4, "origin": "realtime", "msg": {"qos": 1, "payload_ok": true}},
+
+  {"kind": "modbus", "device": "dev-a", "channel": "temp", "epoch": 1, "seq": 5, "sample_ts": "2026-11-10T08:04:00Z", "recv_ts": "2026-11-10T08:04:01Z", "raw": 2311, "tick": 5, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+  {"kind": "modbus", "device": "dev-a", "channel": "temp", "epoch": 1, "seq": 6, "sample_ts": "2026-11-10T08:04:10Z", "recv_ts": "2026-11-10T08:04:11Z", "raw": 2313, "tick": 5, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+  {"kind": "mqtt", "device": "dev-b", "channel": "hum", "epoch": 1, "seq": 4, "sample_ts": "2026-11-10T08:04:20Z", "recv_ts": "2026-11-10T08:04:21Z", "raw": 486, "tick": 5, "origin": "realtime", "msg": {"qos": 1, "payload_ok": true}},
+  {"kind": "modbus", "device": "dev-a", "channel": "temp", "epoch": 1, "seq": 7, "sample_ts": "2026-11-10T08:04:30Z", "recv_ts": "2026-11-10T08:04:31Z", "raw": 2314, "tick": 5, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+  {"kind": "mqtt", "device": "dev-b", "channel": "hum", "epoch": 1, "seq": 5, "sample_ts": "2026-11-10T08:04:40Z", "recv_ts": "2026-11-10T08:04:41Z", "raw": 487, "tick": 5, "origin": "realtime", "msg": {"qos": 1, "payload_ok": true}},
+  {"kind": "modbus", "device": "dev-a", "channel": "temp", "epoch": 1, "seq": 8, "sample_ts": "2026-11-10T08:04:50Z", "recv_ts": "2026-11-10T08:04:51Z", "raw": 2316, "tick": 5, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+  {"kind": "modbus", "device": "dev-c", "channel": "press", "epoch": 1, "seq": 2, "attempt": 4, "timeout": true, "recv_ts": "2026-11-10T08:05:00Z", "tick": 5, "origin": "realtime", "frame": {"function": 3}},
+
+  {"kind": "uplink", "state": "up", "tick": 6, "recv_ts": "2026-11-10T08:06:00Z"},
+  {"kind": "modbus", "device": "dev-a", "channel": "temp", "epoch": 1, "seq": 9, "sample_ts": "2026-11-10T08:06:10Z", "recv_ts": "2026-11-10T08:06:11Z", "raw": 2301, "tick": 6, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+  {"kind": "mqtt", "device": "dev-b", "channel": "hum", "epoch": 1, "seq": 6, "sample_ts": "2026-11-10T08:06:20Z", "recv_ts": "2026-11-10T08:06:21Z", "raw": 491, "tick": 6, "origin": "realtime", "msg": {"qos": 1, "payload_ok": false}},
+  {"kind": "mqtt", "device": "dev-b", "channel": "hum", "epoch": 1, "seq": 2, "sample_ts": "2026-11-10T08:02:20Z", "recv_ts": "2026-11-10T08:06:25Z", "raw": 480, "tick": 6, "origin": "realtime", "msg": {"qos": 1, "payload_ok": true, "dup": true}},
+  {"kind": "mqtt", "device": "dev-b", "channel": "hum", "seq": 7, "sample_ts": "2026-11-10T08:06:30Z", "recv_ts": "2026-11-10T08:06:31Z", "raw": 490, "tick": 6, "origin": "realtime", "msg": {"qos": 0, "payload_ok": true}},
+  {"kind": "modbus", "event": "ack", "device": "dev-a", "channel": "temp", "epoch": 1, "ack_seq": 2, "recv_ts": "2026-11-10T08:06:40Z", "tick": 6, "frame": {"function": 6, "crc_ok": true}},
+
+  {"kind": "modbus", "device": "dev-a", "channel": "temp", "epoch": 2, "seq": 1, "sample_ts": "2026-11-10T10:00:00Z", "recv_ts": "2026-11-10T10:00:01Z", "raw": 2400, "tick": 7, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+  {"kind": "modbus", "device": "dev-a", "channel": "temp", "epoch": 2, "seq": 2, "sample_ts": "2026-11-10T09:59:00Z", "recv_ts": "2026-11-10T10:00:05Z", "raw": 2401, "tick": 7, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+
+  {"kind": "calibration", "device": "dev-a", "channel": "temp", "version": "cal-v2", "scale": 0.01, "offset": -39.5, "unit": "celsius", "effective_from": "2026-11-10T09:30:00Z", "tick": 8},
+  {"kind": "modbus", "device": "dev-a", "channel": "temp", "epoch": 2, "seq": 3, "sample_ts": "2026-11-10T10:01:00Z", "recv_ts": "2026-11-10T10:01:01Z", "raw": 2402, "tick": 8, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+  {"kind": "reconnect", "protocol": "modbus", "device": "dev-a", "channel": "temp", "epoch": 1, "recv_ts": "2026-11-10T10:05:00Z", "tick": 8, "batch": [
+    {"seq": 1, "sample_ts": "2026-11-10T08:00:00Z", "raw": 2315},
+    {"seq": 2, "sample_ts": "2026-11-10T08:01:10Z", "raw": 2319, "quality": "uncertain", "basis": ["device_stale"]},
+    {"seq": 3, "sample_ts": "2026-11-10T08:02:10Z", "raw": 2310},
+    {"seq": 4, "sample_ts": "2026-11-10T08:03:20Z", "raw": 2312},
+    {"seq": 5, "sample_ts": "2026-11-10T08:04:00Z", "raw": 2311},
+    {"seq": 6, "sample_ts": "2026-11-10T08:04:10Z", "raw": 2313},
+    {"seq": 7, "sample_ts": "2026-11-10T08:04:30Z", "raw": 2314},
+    {"seq": 8, "sample_ts": "2026-11-10T08:04:50Z", "raw": 2316}
+  ]},
+
+  {"kind": "reconnect", "protocol": "mqtt", "device": "dev-b", "channel": "hum", "epoch": 1, "recv_ts": "2026-11-10T10:06:00Z", "tick": 9, "batch": [
+    {"seq": 1, "sample_ts": "2026-11-10T08:00:05Z", "raw": 482},
+    {"seq": 2, "sample_ts": "2026-11-10T08:02:20Z", "raw": 480},
+    {"seq": 3, "sample_ts": "2026-11-10T08:03:30Z", "raw": 485},
+    {"seq": 4, "sample_ts": "2026-11-10T08:04:20Z", "raw": 486},
+    {"seq": 5, "sample_ts": "2026-11-10T08:04:40Z", "raw": 487}
+  ]},
+
+  {"kind": "reconnect", "protocol": "modbus", "device": "dev-c", "channel": "press", "epoch": 1, "lost": [[3, 4]], "recv_ts": "2026-11-10T10:07:00Z", "tick": 10, "batch": [
+    {"seq": 1, "sample_ts": "2026-11-10T08:00:07Z", "raw": 101},
+    {"seq": 2, "sample_ts": "2026-11-10T08:03:00Z", "raw": 102},
+    {"seq": 5, "sample_ts": "2026-11-10T08:05:00Z", "raw": 105}
+  ]},
+  {"kind": "modbus", "event": "ack", "device": "dev-a", "channel": "temp", "epoch": 1, "ack_seq": 8, "recv_ts": "2026-11-10T10:08:00Z", "tick": 10, "frame": {"function": 6, "crc_ok": true}},
+  {"kind": "mqtt", "event": "ack", "device": "dev-b", "channel": "hum", "epoch": 1, "ack_seq": 5, "recv_ts": "2026-11-10T10:08:05Z", "tick": 10, "msg": {"type": "puback"}},
+  {"kind": "modbus", "event": "ack", "device": "dev-c", "channel": "press", "epoch": 1, "ack_seq": 2, "recv_ts": "2026-11-10T10:08:10Z", "tick": 10, "frame": {"function": 6, "crc_ok": true}}
+]

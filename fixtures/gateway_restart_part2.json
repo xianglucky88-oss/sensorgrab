@@ -1,0 +1,14 @@
+[
+  {"kind": "uplink", "state": "up", "tick": 4, "recv_ts": "2026-11-11T09:00:00Z"},
+  {"kind": "reconnect", "protocol": "modbus", "device": "dev-r", "channel": "temp", "epoch": 1, "recv_ts": "2026-11-11T09:05:00Z", "tick": 5, "batch": [
+    {"seq": 1, "sample_ts": "2026-11-11T08:00:00Z", "raw": 2000},
+    {"seq": 2, "sample_ts": "2026-11-11T08:00:10Z", "raw": 2001},
+    {"seq": 3, "sample_ts": "2026-11-11T08:01:10Z", "raw": 2002},
+    {"seq": 4, "sample_ts": "2026-11-11T08:01:20Z", "raw": 2003},
+    {"seq": 5, "sample_ts": "2026-11-11T08:02:10Z", "raw": 2004},
+    {"seq": 6, "sample_ts": "2026-11-11T08:02:20Z", "raw": 2005},
+    {"seq": 7, "sample_ts": "2026-11-11T08:02:30Z", "raw": 2006},
+    {"seq": 8, "sample_ts": "2026-11-11T08:03:00Z", "raw": 2007}
+  ]},
+  {"kind": "modbus", "event": "ack", "device": "dev-r", "channel": "temp", "epoch": 1, "ack_seq": 8, "recv_ts": "2026-11-11T09:06:00Z", "tick": 5, "frame": {"function": 6, "crc_ok": true}}
+]

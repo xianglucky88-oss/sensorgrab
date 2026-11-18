@@ -1,0 +1,12 @@
+[
+  {"kind": "calibration", "device": "dev-r", "channel": "temp", "version": "cal-v1", "scale": 0.01, "offset": -40.0, "unit": "celsius", "effective_from": "2026-11-11T00:00:00Z", "tick": 0},
+  {"kind": "modbus", "device": "dev-r", "channel": "temp", "epoch": 1, "seq": 1, "sample_ts": "2026-11-11T08:00:00Z", "recv_ts": "2026-11-11T08:00:01Z", "raw": 2000, "tick": 1, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+  {"kind": "modbus", "device": "dev-r", "channel": "temp", "epoch": 1, "seq": 2, "sample_ts": "2026-11-11T08:00:10Z", "recv_ts": "2026-11-11T08:00:11Z", "raw": 2001, "tick": 1, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+  {"kind": "modbus", "event": "ack", "device": "dev-r", "channel": "temp", "epoch": 1, "ack_seq": 1, "recv_ts": "2026-11-11T08:00:30Z", "tick": 1, "frame": {"function": 6, "crc_ok": true}},
+  {"kind": "uplink", "state": "down", "tick": 2, "recv_ts": "2026-11-11T08:01:00Z"},
+  {"kind": "modbus", "device": "dev-r", "channel": "temp", "epoch": 1, "seq": 3, "sample_ts": "2026-11-11T08:01:10Z", "recv_ts": "2026-11-11T08:01:11Z", "raw": 2002, "tick": 2, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+  {"kind": "modbus", "device": "dev-r", "channel": "temp", "epoch": 1, "seq": 4, "sample_ts": "2026-11-11T08:01:20Z", "recv_ts": "2026-11-11T08:01:21Z", "raw": 2003, "tick": 2, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+  {"kind": "modbus", "device": "dev-r", "channel": "temp", "epoch": 1, "seq": 5, "sample_ts": "2026-11-11T08:02:10Z", "recv_ts": "2026-11-11T08:02:11Z", "raw": 2004, "tick": 3, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+  {"kind": "modbus", "device": "dev-r", "channel": "temp", "epoch": 1, "seq": 6, "sample_ts": "2026-11-11T08:02:20Z", "recv_ts": "2026-11-11T08:02:21Z", "raw": 2005, "tick": 3, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}},
+  {"kind": "modbus", "device": "dev-r", "channel": "temp", "epoch": 1, "seq": 7, "sample_ts": "2026-11-11T08:02:30Z", "recv_ts": "2026-11-11T08:02:31Z", "raw": 2006, "tick": 3, "origin": "realtime", "frame": {"function": 3, "crc_ok": true}}
+]
